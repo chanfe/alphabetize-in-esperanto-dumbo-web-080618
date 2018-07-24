@@ -9,8 +9,7 @@ def alphabetize(arr)
   end
   
   arr.sort_by do |word| 
-    esp_map[word.chars]
-    binding.pry
+    esp_map[word.chars[0]]
   end
   
 end
