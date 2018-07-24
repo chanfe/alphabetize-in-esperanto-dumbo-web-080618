@@ -4,10 +4,10 @@ def alphabetize(arr)
   esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   esp_map = {}
   
-  for i in esperanto_alphabet.length-1 do 
+  for i in esperanto_alphabet.length-1 do binding.pry
     esp_map[esperanto_alphabet[i]] = i
   end
-  binding.pry
+  
   arr.sort_by {|word| esp_map[word]}
   
 end
