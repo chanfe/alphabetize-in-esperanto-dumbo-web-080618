@@ -3,7 +3,7 @@ def alphabetize(arr)
   esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   esp_map = {}
   
-  esperanto_alphabet.each_with_index do |letter, index|
+  esperanto_alphabet.each do |letter|
     esp_map[letter] = index
   end
   
