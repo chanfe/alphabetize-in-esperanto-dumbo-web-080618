@@ -7,5 +7,5 @@ def alphabetize(arr)
     esp_map[letter] = index
   end
   
-  arr.sort_by {|word| esp_map}
+  arr.sort_by {|word| word.char}
 end
