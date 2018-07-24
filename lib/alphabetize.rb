@@ -8,6 +8,10 @@ def alphabetize(arr)
     esp_map[esperanto_alphabet[i]] = i
   end
   
-  arr.sort_by {|word| word.chars.map{|c| esp_map[c]}}
+  arr.sort_by do |word| 
+    word.chars.map do |c| 
+      esp_map[c]
+    end
+  end
   
 end
