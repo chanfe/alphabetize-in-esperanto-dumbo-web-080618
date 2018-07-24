@@ -1,3 +1,4 @@
+require 'pry'
 def alphabetize(arr)
   # code here
   esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
@@ -8,4 +9,5 @@ def alphabetize(arr)
   end
   
   arr.sort_by {|word| esp_map[word]}
+  binding.pry
 end
